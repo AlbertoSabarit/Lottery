@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LotteryKotlin" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.LotteryKotlin" parent="Base.Theme.LotteryKotlin">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary_dark</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_dark</item>
+        <item name="colorOnSecondary">@color/color_on_secondary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="toolbarStyle">@style/Theme.LotteryKotlin.Toolbar</item>
+        <item name="android:navigationBarColor">@color/background_material_light</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Theme.LotteryKotlin.Toolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="titleTextColor">@color/color_on_background</item>
+        <item name="colorOnPrimary">@color/color_on_background</item>
+        <item name="colorControlNormal">@color/color_on_background</item>
+        <item name="colorButtonNormal">@color/color_on_background</item>
+        <item name="android:background">#A7E5ED</item>
+    </style>
+</resources>

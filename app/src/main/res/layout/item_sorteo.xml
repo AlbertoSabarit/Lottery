@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/imgSorteo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textoSorteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/league"
+        android:text="Sorteo"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSorteo"
+        app:layout_constraintStart_toEndOf="@+id/imgSorteo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <TextView
+        android:id="@+id/tvCodigoSorteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="10"
+        android:fontFamily="@font/league"
+        app:layout_constraintBottom_toBottomOf="@+id/textoSorteo"
+        app:layout_constraintStart_toEndOf="@+id/textoSorteo"
+        app:layout_constraintTop_toTopOf="@+id/textoSorteo" />
+
+    <TextView
+        android:id="@+id/tvFechaSorteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="(14/01/2018)"
+        android:fontFamily="@font/league"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCodigoSorteo"
+        app:layout_constraintStart_toEndOf="@+id/tvCodigoSorteo"
+        app:layout_constraintTop_toTopOf="@+id/tvCodigoSorteo" />
+
+    <TextView
+        android:id="@+id/tvNumerosSorteo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="[4,23,25,30,36,41]"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSorteo"
+        app:layout_constraintStart_toEndOf="@+id/imgSorteo"
+        app:layout_constraintTop_toBottomOf="@+id/textoSorteo" />
+
+    <TextView
+        android:id="@+id/tvComplementario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="[1]"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNumerosSorteo"
+        app:layout_constraintStart_toEndOf="@+id/tvNumerosSorteo"
+        app:layout_constraintTop_toTopOf="@+id/tvNumerosSorteo" />
+
+    <TextView
+        android:id="@+id/tvReintegro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="[7]"
+        app:layout_constraintBottom_toBottomOf="@+id/tvComplementario"
+        app:layout_constraintStart_toEndOf="@+id/tvComplementario"
+        app:layout_constraintTop_toTopOf="@+id/tvComplementario" />
+</androidx.constraintlayout.widget.ConstraintLayout>

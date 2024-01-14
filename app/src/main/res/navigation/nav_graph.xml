@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listLotteryFragment">
+
+    <fragment
+        android:id="@+id/listLotteryFragment"
+        android:name="com.examen.lotterykotlin.ui.ListLotteryFragment"
+        android:label="@string/listLotteryFragment" >
+        <action
+            android:id="@+id/action_listLotteryFragment_to_fragmentProgressDialog"
+            app:destination="@id/fragmentProgressDialog" />
+        <action
+            android:id="@+id/action_listLotteryFragment_to_addLotteryFragment"
+            app:destination="@id/addLotteryFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/fragmentProgressDialog"
+        android:name="com.examen.lotterykotlin.ui.FragmentProgressDialog"
+        android:label="Cargando..." />
+    <fragment
+        android:id="@+id/addLotteryFragment"
+        android:name="com.examen.lotterykotlin.ui.AddLotteryFragment"
+        android:label="Creación sorteo" >
+        <action
+            android:id="@+id/action_addLotteryFragment_to_fragmentProgressDialog"
+            app:destination="@id/fragmentProgressDialog" />
+    </fragment>
+</navigation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sp_tipoSorteo">
+        <item>Bonoloto</item>
+        <item>Primitiva</item>
+        <item>Euromillon</item>
+    </array>
+</resources>
